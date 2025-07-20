@@ -1,0 +1,15 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+footer {
+    grid-area: footer;
+
+    padding: var.$spacing-sm;
+
+    .copyright {
+        color: var.$color-neutro-700;
+        font-size: var.$font-size-md;
+        font-weight: var.$font-weight-regular;
+        text-align: center;
+    }
+}

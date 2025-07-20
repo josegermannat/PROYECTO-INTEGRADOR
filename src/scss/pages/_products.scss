@@ -1,0 +1,27 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+.page-products {
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .searcher {
+            &__word {
+                font-size: var.$font-size-md;
+                font-weight: var.$font-weight-regular;
+                color: var.$color-neutro-900;
+
+                border-radius: 0.5rem 0 0 0.5rem;
+                padding: var.$spacing-xs;
+            }
+        }
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var.$spacing-md;
+    }
+}

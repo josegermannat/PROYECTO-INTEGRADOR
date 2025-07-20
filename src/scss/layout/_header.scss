@@ -1,0 +1,8 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+header {
+    grid-area: header;
+
+    padding: var.$spacing-lg;
+}

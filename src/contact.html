@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Web - Contacto</title>
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Tienda Web</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a class="navbar__item" href="./index.html">Inicio</a></li>
+                <li><a class="navbar__item" href="./about-us.html">Nosotros</a></li>
+                <li><a class="navbar__item" href="./products.html">Productos</a></li>
+                <li><a class="navbar__item navbar__item--active" href="./contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-contact">
+        <section>
+            <h2 class="title">Contacto</h2>
+
+            <div class="content">
+                <article class="contact-data">
+                    <h3 class="contact-data__title">Datos de contacto</h3>
+
+                    <ul class="contact-data__content">
+                        <li class="contact-data__item">Fantasia SRL</li>
+                        <li class="contact-data__item">Domicilio: Av. Siempreviva 200, San Juan, Argentina</li>
+                        <li class="contact-data__item">Código postal: 5400</li>
+                        <li class="contact-data__item">Email: <a href="mailto:info@fantasia.com">info@fantasia.com</a>
+                        </li>
+                        <li class="contact-data__item">Teléfono: <a href="tel:554388324">+54 2645110099</a></li>
+                    </ul>
+                </article>
+
+                <article class="query-form">
+                    <h3 class="query-form__title">Formulario de consulta</h3>
+
+                    <form class="form">
+                        <div class="form__group">
+                            <label class="form__group__label" for="id-name">Nombre:</label>
+                            <input class="form__group__input" type="text" name="name" id="id-name" minlength="2"
+                                maxlength="15" placeholder="Ingresa tu nombre" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__group__label" for="id-surname">Apellido:</label>
+                            <input class="form__group__text" type="text" name="apellido" id="id-surname" minlength="2"
+                                maxlength="15" placeholder="Ingresa tu apellido" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__group__label" for="id-email">Email:</label>
+                            <input class="form__group__email" type="email" name="email" id="id-email" minlength="10"
+                                maxlength="50" placeholder="Ingresa tu correo electrónico" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__group__label" for="id-phone">Teléfono:</label>
+                            <input class="form__group__phone" type="text" name="phone" id="id-phone" maxlength="15"
+                                placeholder="Ingresa tu número telefónico" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__group__label" for="id-query">Consulta:</label>
+                            <textarea class="form__group__text" name="query" id="id-query" cols="60" rows="5"
+                                maxlength="250" placeholder="Ingresa tu consulta"></textarea>
+                        </div>
+
+                        <input class="button button--primary" type="submit" value="Enviar">
+                    </form>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy;2025 Todos los derechos reservados - MiNombre</p>
+    </footer>
+</body>
+
+</html>

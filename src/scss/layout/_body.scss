@@ -1,0 +1,15 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+body {
+    height: 100vh;
+
+    display: grid;
+    grid-template-areas:
+        "header"
+        "navbar"
+        "main"
+        "footer";
+    grid-template-rows: max-content max-content 1fr max-content;
+    
+}

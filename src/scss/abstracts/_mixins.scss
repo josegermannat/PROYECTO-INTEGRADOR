@@ -1,0 +1,37 @@
+@use "./variables" as var;
+
+@mixin box-dimensions($height: 100%, $width: 100%, $padding: var.$spacing-md, $margin: 0) {
+    height: $height;
+    width: $width;
+    padding: $padding;
+    margin: $margin;
+}
+
+@mixin box-borders($border: 1px solid var.$color-primary-500, $border-radius: var.$border-radius-md) {
+    border: $border;
+    border-radius: $border-radius;
+}
+
+@mixin text-borders($color, $width: 0.0625rem, $shadow: 0 0 0) {
+    $positive-width: $width;
+    $negative-width: calc($width * -1);
+
+    text-shadow:
+        $negative-width $negative-width 0 $color, // arriba izquierda
+        $positive-width $negative-width 0 $color, // arriba derecha
+        $negative-width $positive-width 0 $color, // abajo izquierda
+        $positive-width $positive-width 0 $color, // abajo derecha
+        $shadow;
+}
+
+@mixin text-ellipsis($lines: 3) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $lines;
+    line-clamp: $lines;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-height: calc(1.4em * $lines);
+    word-break: break-word;
+
+}

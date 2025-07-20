@@ -1,0 +1,8 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+main {
+    grid-area: main;
+
+    padding: var.$spacing-md;
+}

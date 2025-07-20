@@ -1,0 +1,40 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+.page-contact {
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: var.$spacing-xl ;
+        width: 450px;
+
+        .query-form {
+            display: flex;
+            flex-direction: column;
+            gap: var.$spacing-md;
+        }
+
+        .contact-data {
+            display: flex;
+            flex-direction: column;
+            gap: var.$spacing-md;
+
+            &__content {
+                display: flex;
+                flex-direction: column;
+                gap: var.$spacing-sm;
+                padding: var.$spacing-md;
+
+                border: 1px solid var.$color-primary-700;
+                border-radius: 0.25rem;
+            }
+
+            &__item {
+                font-size: var.$font-size-sm;
+                font-weight: var.$font-weight-bold;
+                color: var.$color-primary-900;
+            }
+        }
+    }
+}
