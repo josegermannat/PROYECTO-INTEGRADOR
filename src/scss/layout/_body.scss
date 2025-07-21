@@ -3,7 +3,7 @@
 
 body {
     height: 100vh;
-
+    background: var.$color-primary-100;
     display: grid;
     grid-template-areas:
         "header"
@@ -11,5 +11,4 @@ body {
         "main"
         "footer";
     grid-template-rows: max-content max-content 1fr max-content;
-    
 }

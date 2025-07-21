@@ -2,23 +2,35 @@
 @use "../abstracts/variables" as var;
 
 nav {
-  grid-area: navbar;
+    grid-area: navbar;
+    padding: var.$spacing-md;
 
+    .navbar {
+        display: flex;
+        justify-content: center;
+        gap: var.$spacing-xxl;
+        list-style: none;
+        margin: 0;
+        padding: 0;
 
-  .navbar {
+        &__item {
+            color: var.$color-primary-700;
+            font-size: var.$font-size-md;
+            font-weight: var.$font-weight-regular;
+            text-decoration: none;
+            padding: var.$spacing-sm var.$spacing-md;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
 
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+            &:hover {
+                font-size: calc(var.$font-size-md + 0.125rem);
+                color: var.$color-primary-800;
+            }
 
-    &__item {
-      color: var.$color-neutro-900;
-      font-size: var.$font-size-md;
-
-      &:hover,
-      &--active {
-        font-weight: var.$font-weight-bold;
-      }
+            &--active {
+                font-size: calc(var.$font-size-md + 0.125rem);
+                color: var.$color-primary-800;
+            }
+        }
     }
-  }
 }

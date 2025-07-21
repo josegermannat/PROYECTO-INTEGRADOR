@@ -3,13 +3,21 @@
 
 footer {
     grid-area: footer;
-
-    padding: var.$spacing-sm;
+    padding: var.$spacing-lg var.$spacing-md;
+    background: var.$color-primary-900;
+    color: var.$color-primary-100;
+    box-shadow: 0 -2px 16px var.$color-dark-alpha-100;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    margin-top: var.$spacing-xl;
 
     .copyright {
-        color: var.$color-neutro-700;
-        font-size: var.$font-size-md;
+        color: var.$color-primary-100;
+        font-size: var.$font-size-xl;
         font-weight: var.$font-weight-regular;
         text-align: center;
+        letter-spacing: 0.05em;
+        text-shadow: var.$text-shadow-sm;
+        line-height: 1.5;
     }
 }

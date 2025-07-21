@@ -3,6 +3,19 @@
 
 header {
     grid-area: header;
-
     padding: var.$spacing-lg;
+    text-align: center;
+    background: var.$color-primary-200;
+    border-bottom: 3px solid var.$color-primary-500;
+    box-shadow: var.$box-shadow-md;
+
+    h1 {
+        font-size: var.$font-size-xxxl;
+        font-weight: var.$font-weight-bold;
+        color: var.$color-primary-800;
+        margin-bottom: var.$spacing-md;
+        letter-spacing: 0.05em;
+        text-shadow: var.$text-shadow-lg;
+        text-transform: uppercase;
+    }
 }
