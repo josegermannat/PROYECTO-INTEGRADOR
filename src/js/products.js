@@ -7,7 +7,7 @@ const searchInput = document.querySelector('.searcher__word');
 const searchBtn = document.querySelector('.button--search');
 const allBtn = document.querySelector('.button--all');
 
-// Closure fuera de renderProducts
+
 function createCounter(counterElem) {
   let count = 0;
   return {
@@ -40,10 +40,11 @@ function renderProducts(productList) {
         <button class="button button--remove">Quitar del carrito</button>
       </div>
     `;
+    
     const addBtn = card.querySelector('.button--add');
     const removeBtn = card.querySelector('.button--remove');
     const counterElem = card.querySelector('.card__counter');
-    // Usar el closure externo para el contador
+    
     const counter = createCounter(counterElem);
     addBtn.addEventListener('click', counter.add);
     removeBtn.addEventListener('click', counter.remove);
